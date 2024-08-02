@@ -1,0 +1,109 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar ul li {
+    margin: 0 15px;
+}
+
+#navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+#navbar ul li a:hover {
+    color: #ff6347;
+    border-bottom: 2px solid #ff6347;
+}
+
+.scrolled {
+    background-color: #222;
+}
+
+.content {
+    padding-top: 60px; /* To avoid content being hidden behind the fixed navbar */
+}
+
+section {
+    padding: 100px;
+    margin: 20px 0;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+section h1 {
+    margin-top: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+section p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+section ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+section ul li {
+    margin: 10px 0;
+}
+
+section:nth-child(even) {
+    background-color: #e0f7fa;
+}
+
+section:nth-child(odd) {
+    background-color: #f9fbe7;
+}
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile-image {
+    margin-right: 20px;
+}
+
+.profile-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
